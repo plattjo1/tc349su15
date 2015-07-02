@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700italic' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8">
+        <title>Hippo's Hotdogs</title>
+		<style>
+		
+		body {
+			font-family: helvetica, sans-serif;
+			margin: 0 auto;
+			max-width: 450px;
+			background: rgba(255,255,0,1);
+			overflow:hidden;
+		}
+		.homeimage{
+			height: 150px;
+			width: 450px;
+		}
+		.menubar{
+			height: 20px;
+			width: 300px;
+			background: red;
+			border-radius: 20px;
+			border: 7px solid red;
+			position: relative;
+			top: -20px;
+			left: 70px;
+		
+		}
+		
+		.menubarhome{
+			position: relative;
+			top: -54px;
+			left: 125px;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+		}
+		.menubarmenu{
+			position: relative;
+			top: -82px;
+			left: 195px;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+		}
+		.menubargallery{
+			position: relative;
+			top: -110px;
+			left: 260px;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+		}
+		
+		a:link {
+			text-decoration: none;
+			color:black;
+		}
+
+		a:visited {
+			text-decoration: none;
+			color:black;
+		}
+
+		a:hover {
+			text-decoration: none;
+			color:blue;
+		}
+
+		a:active {
+			text-decoration: none;
+			color:blue;
+		}
+		.foodmenu{
+			height: 600px;
+			width: 200px;
+			background: red;
+			border-radius: 20px;
+			border: 7px solid black;
+			position: relative;
+			top: -60px;
+			left: -300px;
+		}
+		button.hdog{
+			position: relative;
+			background:none;
+			border:none;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+			top: -610px;
+			left: -282px;
+		}
+		
+		button.Cbsan{
+			position: relative;
+			background:none;
+			border:none;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+			top: -490px;
+			left: -465px;
+		}
+		
+		button.fries{
+			position: relative;
+			background:none;
+			border:none;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+			top: -580px;
+			left: -282px;
+		}
+		
+		button.Psaus{
+			position: relative;
+			background:none;
+			border:none;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+			top: -550px;
+			left: -468px;
+		}
+		
+		button.Msan{
+			position: relative;
+			background:none;
+			border:none;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+			top: -640px;
+			left: -282px;
+		}
+
+		.FOOD{
+			position: relative;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+			top: -790px;
+			left: -235px;
+			Font-size: 40px;
+
+		}
+		.DRINKS{
+			position: relative;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+			top: -550px;
+			left: -260px;
+			Font-size: 40px;
+
+		}
+		
+		button.pepsi{
+			position: relative;
+			background:none;
+			border:none;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+			top: -280px;
+			left: -480px;
+		}
+		
+		button.dpepsi{
+			position: relative;
+			background:none;
+			border:none;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+			top: -310px;
+			left: -550px;
+		}
+		
+		button.rootbeer{
+			position: relative;
+			background:none;
+			border:none;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+			top: -370px;
+			left: -282px;
+		}
+		
+		button.water{
+			position: relative;
+			background:none;
+			border:none;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+			top: -400px;
+			left: -390px;
+		}
+		
+		.imageholder{
+			position:relative;
+			border: 15px solid black;
+			border-radius: 15px;
+			height: 300px;
+			width: 400px;
+			top: -910px;
+			left: 100px;
+			
+		}
+		
+		.textholder{
+			position:relative;
+			border: 15px solid black;
+			border-radius: 15px;
+			height: 100px;
+			width: 500px;
+			top: 50px;
+			left: -60px;
+			background-color: red;
+			font-family: 'Bree Serif', serif;
+			padding: 5px;
+
+		}
+		
+		.showhdog{
+			this.src="images/image03.jpg";
+		}
+		
+		.showhdog text{
+		 opacity: 1;
+		}
+		
+		</style>
+    </head>
+
+    <body>
+            <header>
+                <h1><a href="index.html"><img class="homeimage" src="images/hippos.png"></a></h1>
+			</header>
+				<div class="menubar"></div>
+				<div class="menubarhome"><a href="index.html"> Home </a></div>
+				<div class="menubarmenu"><a href="menuitems.html"> Menu </a></div>
+				<div class="menubargallery"><a href="gallery.html"> Gallery </a></div>
+				<div class="foodmenu"></div>
+				
+				<button class="hdog" onclick="hdog1()">Classic Hippo Dog</button>
+				<button class ="Cbsan" onclick="Cbsan1()" id="Cbsan2"> Beef Sandwich</button>
+				<button class="fries" onclick="fries1()" id="fries2">Chilli Cheese Fries</button>
+				<button class="Psaus"  onclick="Psaus1()" id="Psaus2">Polish Sausage</button>
+				<button class="Msan" onclick="Msan1()" id="Msan2">Meatball Sandwich</button>
+				<button class="pepsi" onclick ="pepsi1()" id="pepsi2">Pepsi</button>
+				<button class="dpepsi" onclick ="dpepsi1()" id="dpepsi2">Diet Pepsi</button>
+				<button class="rootbeer" onclick="rootbeer1()" id="rootbeer2">Root Beer</button>
+				<button class="water" onclick ="water1()" id="water2">Water</button>
+				
+				<div class="FOOD">Food</div>
+				<div class="DRINKS">Drinks</div>
+				<div class="imageholder"><img id="menuImage" src="images/menuimage02.jpg"</div>
+				<div class="textholder"><p id="menuText">The Classic Hippo Dog is the most popular thing on the menu, it comes with pickles, tomatoes, relish, and onions</div>
+				</body>
+				<script>
+
+				function hdog1()
+				{
+					document.getElementById('menuImage').src="images/menuimage02.jpg";
+					document.getElementById('menuText').innerHTML="The Classic Hippo Dog is the most popular thing on the menu, it comes with pickles, tomatoes, relish, and onions";
+				}
+				function Cbsan1()
+				{
+					document.getElementById('menuImage').src="images/menuimage01.jpg";
+					document.getElementById('menuText').innerHTML="The Chicago Beef Sandwich is made from premium beef and topped with a delicious sauce that is guaranteed to keep you coming back for more";
+					
+				}
+				function fries1()
+				{
+					document.getElementById('menuImage').src="images/menuimage03.jpg";
+					document.getElementById('menuText').innerHTML="These Chilli Cheese Fries are all of the rage with mountains of yellow cheese and tons of meaty chilli, all waiting to be eaten";
+				}
+				function Psaus1()
+				{
+					document.getElementById('menuImage').src="images/menuimage04.jpg";
+					document.getElementById('menuText').innerHTML="A true Vienna Polish Sausage on a steaming poppy seed bun, butterflied at the tips for a better grilled taste";
+				}
+				function Msan1()
+				{
+					document.getElementById('menuImage').src="images/menuimage05.jpg";
+					document.getElementById('menuText').innerHTML="A tasty Meatball Sandwich in a chibotta bread bun. Covered in a delicious giardiniera sauce.";
+				}
+				function water1()
+				{
+					document.getElementById('menuImage').src="images/menuimage09.jpg";
+					document.getElementById('menuText').innerHTML="A plain ol' water, goes well with everything on the menu";
+				}
+				function pepsi1()
+				{
+					document.getElementById('menuImage').src="images/menuimage07.jpg";
+					document.getElementById('menuText').innerHTML="A cold refreshing pepsi, just what you need to wash down a delicious Hippo Dog";
+				}
+				function dpepsi1()
+				{
+					document.getElementById('menuImage').src="images/menuimage06.jpg";
+					document.getElementById('menuText').innerHTML="A cold refreshing pepsi for someone looking to consume less calories";
+				}
+				function rootbeer1()
+				{
+					document.getElementById('menuImage').src="images/menuimage06.jpg";
+					document.getElementById('menuText').innerHTML="A favorite from the Hippo's crew, the Root Beer. Most of our cooks enjoy a Root Beer with their food";
+				}
+				
+				</script>
+</html> 

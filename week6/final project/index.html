@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700italic' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8">
+        <title>Hippo's Hotdogs</title>
+		<style>
+		
+		body {
+			font-family: helvetica, sans-serif;
+			margin: 0 auto;
+			max-width: 450px;
+			background: rgba(255,255,0,1);
+			overflow:hidden;
+		}
+		.homeimage{
+			height: 150px;
+			width: 450px;
+		}
+		.menubar{
+			height: 20px;
+			width: 300px;
+			background: red;
+			border-radius: 20px;
+			border: 7px solid red;
+			position: relative;
+			top: -20px;
+			left: 70px;
+		
+		}
+		
+		.menubarhome{
+			position: relative;
+			top: -54px;
+			left: 125px;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+		}
+		.menubarmenu{
+			position: relative;
+			top: -82px;
+			left: 195px;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+		}
+		.menubargallery{
+			position: relative;
+			top: -110px;
+			left: 260px;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+		}
+		
+		a:link {
+			text-decoration: none;
+			color:black;
+		}
+
+		a:visited {
+			text-decoration: none;
+			color:black;
+		}
+
+		a:hover {
+			text-decoration: none;
+			color:blue;
+		}
+
+		a:active {
+			text-decoration: none;
+			color:blue;
+		}
+		
+		.firstport{
+			position:relative;
+			border: 15px solid black;
+			border-radius: 15px;
+			height: 200px;
+			width: 200px;
+			left: -200px;
+			top: -20px;
+		}
+		
+		.secondport{
+			position:relative;
+			border: 15px solid black;
+			border-radius: 15px;
+			height: 200px;
+			width: 200px;
+			left: -200px;
+			top: 10px;
+		}
+		
+		.port1{
+			width: 200px;
+			height: 200px;
+			position: relative;
+			top: -465px;
+			left: -185px;
+			z-index: -1;
+		}
+		
+		.port2{
+			width: 202px;
+			height: 200px;
+			position: relative;
+			top: -205px;
+			left: -390px;
+			z-index: -1;
+		}
+		
+		.quote1{
+			position:relative;
+			border: 15px solid black;
+			border-radius: 15px;
+			height: 200px;
+			width: 600px;
+			top:-684px;
+			left:100px;
+			background-image: url(images/image02.jpg);
+		}
+		
+		.quote2{
+			position:relative;
+			border: 15px solid black;
+			border-radius: 15px;
+			height: 200px;
+			width: 600px;
+			top:-654px;
+			left:100px;
+			background-image: url(images/image03.jpg);
+		}
+		
+		.quote1text{
+			position:relative;
+			top: 50px;
+			font-family: 'Bree Serif', serif;
+		}
+		
+		.quote2text{
+		
+		}
+		
+		.desc{
+			color: white;
+			background: linear-gradient(bottom, rgba(255,0,0,1), rgba(255,0,0,.5));
+			background: -webkit-linear-gradient(bottom, rgba(255,0,0,1), rgba(255,0,0,.5));
+			background: -moz-linear-gradient(bottom, rgba(255,0,0,1), rgba(255,0,0,.5));
+			padding: 11px;
+			line-height: 28px;
+			text-align: justify;
+			position: absolute;
+			bottom: 0;
+			margin: 0;
+			height: 28px;
+			transition: height .5s;
+			-webkit-transition: height .5s;
+			-moz-transition: height .5s;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+		}
+		
+		.desc2{
+			color: white;
+			background: linear-gradient(bottom, rgba(255,0,0,1), rgba(255,0,0,.5));
+			background: -webkit-linear-gradient(bottom, rgba(255,0,0,1), rgba(255,0,0,.5));
+			background: -moz-linear-gradient(bottom, rgba(255,0,0,1), rgba(255,0,0,.5));
+			padding: 11px;
+			line-height: 28px;
+			position: absolute;
+			bottom: 0;
+			margin: 0;
+			height: 28px;
+			transition: height .5s;
+			-webkit-transition: height .5s;
+			-moz-transition: height .5s;
+			font-family: 'Bree Serif', serif;
+			font-size: 20px;
+		}
+		small {
+			opacity: 0;
+		}
+		
+		.open-desc p {
+			height: 130px;
+		}
+
+		.open-desc small {
+			opacity: 1;
+		}
+		
+		.customer{
+			font-family: 'Bree Serif', serif;
+			position:relative;
+			top:-1162px;
+			left:115px;
+			font-size:14px;
+		}
+
+		</style>
+    </head>
+
+    <body>
+            <header>
+                <h1><a href="index.html"><img class="homeimage" src="images/hippos.png" alt="home page image"></a></h1>
+			</header>
+				<div class="menubar"></div>
+				<div class="menubarhome"><a href="index.html"> Home </a></div>
+				<div class="menubarmenu"><a href="menuitems.html"> Menu </a></div>
+				<div class="menubargallery"><a href="gallery.html"> Gallery </a></div>
+				
+				<div class="firstport"></div>
+				<div class="secondport"></div>
+				<img class="port1" src="images/portrait.jpg" alt="customer portrait">
+				<img class="port2" src="images/portrait2.jpg" alt="customer portrait">
+				<div class="quote1">
+				<p class="desc">Joshua  <br />
+				<small><br>"I love visiting Hippos. Their Hippo Dogs have to be the best hotdogs in the entire state." </small></p>
+				</div>
+			    <div class="quote2">
+				<p class="desc2">Lynn  <br />
+				<small><br>"Hippos is the only place I can get top notch chilli cheese fries during my lunch hours. I visit them almost every day to eat those fries!" </small></p>
+				</div>
+				<div class="customer">Click for Customer Quotes</div>
+		   
+               
+            <footer>
+            </footer>
+			<script>
+				$('div').on('click', function() {
+					$(this).toggleClass('open-desc');
+				});
+</script>
+    </body>
+</html> 
